@@ -2,7 +2,7 @@ title: Tech Blog
 email: dev-danx@example.com
 description: A tech blog by Dan
 author: Dan
-url: "https://dev-danx.github.io"
+url: ""
 
 # Build settings
 markdown: kramdown
