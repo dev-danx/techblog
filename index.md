@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Welcome
+title: Tech Blog
 ---
 
-# Welcome to My Blog
+# Tech Blog
 
-This is a blog powered by **GitHub Pages** and Jekyll.
+A blog about .NET, distributed systems, and software engineering.
 
-## Recent Posts
+## Recent Articles
 
 <ul>
   {% for post in site.posts %}
@@ -17,3 +17,9 @@ This is a blog powered by **GitHub Pages** and Jekyll.
     </li>
   {% endfor %}
 </ul>
+
+## Topics
+
+- **.NET** - C#, F#, and the .NET ecosystem
+- **Distributed Systems** - Microservices, Orleans, actor frameworks
+- **DevOps** - CI/CD, Kubernetes, cloud-native
