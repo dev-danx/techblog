@@ -175,10 +175,10 @@
 <body>
     <header class="header">
         <div class="container header-content">
-            <a href="{{ site.url }}/techblog/" class="logo">{{ site.title }}</a>
+            <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
             <nav>
-                <a href="{{ site.url }}/techblog/">Home</a>
-                <a href="{{ site.url }}/techblog/about.html">About</a>
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/about.html">About</a>
             </nav>
         </div>
     </header>
@@ -200,7 +200,7 @@
         <ul class="article-list">
             {% for post in site.posts %}
             <li class="article-item">
-                <a href="{{ site.url }}/techblog{{ post.url }}">
+                <a href="{{ site.baseurl }}{{ post.url }}">
                     <div class="article-meta">
                         {% if post.categories %}
                         {% for category in post.categories %}
