@@ -3,12 +3,11 @@ email: dev-danx@example.com
 description: A tech blog by Dan
 author: Dan
 url: "https://dev-danx.github.io/techblog"
+baseurl: "/techblog"
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+future: true
 
 # Exclude from processing
 exclude:
