@@ -1,8 +1,11 @@
-title: Tech Blog
+title: Tech Blog - Dan Falk Møller
 email: dev-danx@example.com
-description: A tech blog by Dan
-author: Dan
-url: ""
+description: Enterprise Architect writing about C#, .NET, Orleans, distributed systems, AI agents, and cloud architecture.
+author: Dan Falk Møller
+url: https://dev-danx.github.io
+
+# Twitter
+twitter_username: dev_danx
 
 # Build settings
 markdown: kramdown

@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ page.excerpt | default: page.content | truncate: 160 }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ site.url }}/techblog{{ page.url }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
+    <meta property="og:description" content="{{ page.excerpt | default: page.content | truncate: 160 }}">
+    <meta property="og:url" content="{{ site.url }}/techblog{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+    {% endif %}
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | default: page.content | truncate: 160 }}">
+    <meta name="twitter:site" content="@dev_danx">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ page.title }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ site.author }}"
+        },
+        "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+        "url": "{{ site.url }}/techblog{{ page.url }}"
+    }
+    </script>
+    
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
